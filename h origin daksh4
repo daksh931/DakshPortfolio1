@@ -1,0 +1,85 @@
+*   [33me5b47d7[m[33m ([m[1;32mmain[m[33m)[m Merge branch 'daksh4' of https://github.com/daksh931/PortfolioFeb
+[31m|[m[32m\[m  
+[31m|[m *   [33m921cecc[m[33m ([m[1;31morigin/daksh4[m[33m)[m Merge pull request #12 from daksh931/main
+[31m|[m [33m|[m[34m\[m  
+* [33m|[m [34m\[m   [33mdec7617[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m Merge branch 'main' of https://github.com/daksh931/PortfolioFeb
+[33m|[m[34m\[m [33m\[m [34m\[m  
+[33m|[m [34m|[m[33m/[m [34m/[m  
+[33m|[m[33m/[m[34m|[m [34m/[m   
+[33m|[m [34m|[m[34m/[m    
+[33m|[m * [33maeda823[m toggle button update
+* [36m|[m [33m9087778[m[33m ([m[1;36mHEAD -> [m[1;32mdaksh4[m[33m)[m updated vision withput pics
+[36m|[m[36m/[m  
+* [33mdeef4ca[m skillSphere
+* [33m860028b[m update tech stack
+*   [33m6a224bb[m Merge pull request #11 from daksh931/daksh3
+[1;31m|[m[1;32m\[m  
+[1;31m|[m * [33mcfc0bf2[m[33m ([m[1;31morigin/daksh3[m[33m, [m[1;32mdaksh3[m[33m)[m wine site details added
+[1;31m|[m * [33mfd87325[m[33m ([m[1;32mdaksh2[m[33m)[m added recotech details
+* [1;32m|[m [33mabdd384[m update
+[1;32m|[m[1;32m/[m  
+* [33m7c46125[m fade effect white to from-gray-100
+* [33m862dd50[m inages added
+* [33mfd107ce[m content of the projects
+* [33m9a9ca04[m project details dynamic routing done
+* [33m4ef8b7b[m routing done
+* [33m2246b31[m nothing
+[1;32m|[m *   [33m5408afc[m[33m ([m[1;31morigin/branch2dk[m[33m)[m Merge pull request #10 from daksh931/main
+[1;32m|[m [1;33m|[m[1;32m\[m  
+[1;32m|[m [1;33m|[m[1;32m/[m  
+[1;32m|[m[1;32m/[m[1;33m|[m   
+* [1;33m|[m [33m0df1f38[m update tech stack and projects routing
+[1;34m|[m [1;33m|[m * [33maada980[m[33m ([m[1;31morigin/daksh2[m[33m)[m vercel routing updated
+[1;34m|[m [1;33m|[m * [33md16f2ce[m updated code images updated
+[1;34m|[m [1;33m|[m * [33mc78ad4c[m updated images and motion stack used div
+[1;34m|[m [1;33m|[m[1;34m/[m  
+[1;34m|[m[1;34m/[m[1;33m|[m   
+* [1;33m|[m [33m940aca8[m update tech stack icons
+* [1;33m|[m [33mce522a4[m Projects Details Page Done
+* [1;33m|[m   [33m060a13c[m Merge pull request #9 from daksh931/dalip
+[1;33m|[m[31m\[m [1;33m\[m  
+[1;33m|[m [31m|[m[1;33m/[m  
+[1;33m|[m[1;33m/[m[31m|[m   
+[1;33m|[m * [33me86be0d[m[33m ([m[1;31morigin/dalip[m[33m)[m new animations and work page
+[1;33m|[m *   [33m61949fe[m Merge pull request #8 from daksh931/main
+[1;33m|[m [32m|[m[1;33m\[m  
+[1;33m|[m [32m|[m[1;33m/[m  
+[1;33m|[m[1;33m/[m[32m|[m   
+* [32m|[m [33m8bf5060[m Merge pull request #7 from daksh931/dalip
+[34m|[m[32m\[m[32m|[m 
+[34m|[m *   [33mfa90bf0[m Merge branch 'main' into dalip
+[34m|[m [36m|[m[34m\[m  
+[34m|[m [36m|[m[34m/[m  
+[34m|[m[34m/[m[36m|[m   
+* [36m|[m [33mca26944[m nav added backdrop blur effect
+* [36m|[m [33m38967de[m working nav
+* [36m|[m   [33m6d46b05[m Merge pull request #6 from daksh931/dalip
+[1;32m|[m[1;33m\[m [36m\[m  
+* [1;33m\[m [36m\[m   [33m57417e8[m Merge pull request #4 from daksh931/branch2dk
+[1;34m|[m[1;35m\[m [1;33m\[m [36m\[m  
+[1;34m|[m * [1;33m|[m [36m|[m [33m4064ce0[m nav done
+* [1;35m|[m [1;33m|[m [36m|[m   [33m74b16bf[m Merge pull request #3 from daksh931/dalip
+[1;36m|[m[31m\[m [1;35m\[m [1;33m\[m [36m\[m  
+[1;36m|[m [31m|[m [1;35m|[m [1;33m|[m * [33mffdaba3[m ourwork
+[1;36m|[m [31m|[m [1;35m|[m [1;33m|[m * [33me0bdb83[m nav done
+[1;36m|[m [31m|[m [1;35m|[m [1;33m|[m[1;33m/[m  
+[1;36m|[m [31m|[m [1;35m|[m * [33m050b405[m landing page done
+[1;36m|[m [31m|[m [1;35m|[m[31m/[m  
+[1;36m|[m [31m|[m[31m/[m[1;35m|[m   
+[1;36m|[m * [1;35m|[m [33ma74e5b4[m landing page
+[1;36m|[m[1;36m/[m [1;35m/[m  
+* [1;35m|[m [33m3527689[m Merge pull request #2 from daksh931/branch2dk
+[32m|[m[1;35m\[m[1;35m|[m 
+[32m|[m * [33m89bb8f1[m working 2
+[32m|[m * [33m6e0e88e[m working
+[32m|[m * [33m0306dde[m merged dalip & daksh code
+[32m|[m[32m/[m  
+*   [33m1d570c1[m Merge pull request #1 from daksh931/branch2dk
+[34m|[m[35m\[m  
+[34m|[m * [33m99eb097[m navcode by daksh
+* [35m|[m [33me465990[m aboutUs and ourServices
+[35m|[m[35m/[m  
+* [33maaf0e48[m navbar proto commit
+* [33maae60dd[m router dom added commit
+* [33mcb34fc2[m 2nd commit
+* [33m76590bd[m first commit
