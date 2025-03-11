@@ -69,7 +69,7 @@ function ProjectCard({ project }) {
       className="relative cursor-pointer rounded-xl overflow-hidden border-none transition duration-500 bg-black/90 text-white"
       onClick={() => navigate(`/projects/${project.id}`)}
     >
-      <div className="p-2 shadow-cyan-900 shadow-lg ">
+      <div className="p-2  group">
       <div id="image div " className="h-64 overflow-hidden  ">
       <img
         src={project.image}
@@ -77,13 +77,13 @@ function ProjectCard({ project }) {
         className=" object-center rounded-t-xl"
         />
         </div>
-        <div className="mt-2 mx-[1px]  "></div>
-      <div className="p-4">
-        <h2 className="text-2xl font-bold text-[#91A810]/80 hover:text-[#91A810] transition-colors delay-75 duration-200 group">{project.name}</h2>
+        {/* <div className="mt-2 mx-[1px] "></div> */}
+      <div className="p-4  ">
+        <h2 className="text-2xl font-bold text-[#91A810]/80 group-hover:text-[#91A810]  transition-colors delay-75 duration-200 group">{project.name}</h2>
         <p className="text-zinc-300 group-hover:text-white text-sm mt-3 transition-colors delay-75 duration-200">Recotech is a multi-role management system designed to streamline operations across different user roles, including SUPER_ADMIN, ADMIN</p>
       </div>
-      <div id="know more" className="w-full flex justify-end pb-1 pr-1 text-white font-mono">
-        <div className=" flex space-x-1.5 text-lg items-center">
+      <div id="know more" className="w-full flex justify-end pb-1 pr-1 text-white font-mono group-hover:text-[#91A810] transition-colors delay-75 duration-200 ">
+        <div className=" flex space-x-1.5 text-lg items-center ">
               <FaArrowUpRightFromSquare />
           
         </div>
