@@ -7,11 +7,11 @@ function WhyChooseUs() {
     <div className="my-16 px-6 lg:px-24">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
         <div className="text-left">
-          <h2 className="text-orange-500 font-semibold">Why Choose Us</h2>
-          <h1 className="text-4xl font-bold text-gray-900 mt-2">
+          {/* <h2 className="text-orange-500 font-semibold">Choosing </h2> */}
+          <h1 className="text-4xl font-bold  text-[#A374FF] hover:text-[#A165FF]/70 cursor-pointer transition-colors delay-75 duration-200 mt-2">
             Achieve your business goals with our web development solutions{" "}
           </h1>
-          <p className="mt-4">
+          <p className="mt-4 text-lg leading-5.5 text-white">
             In today’s digital age, we understand online presence is very
             important for every size of business. That’s why we offer only our
             best and most expert web development solutions that help you achieve
@@ -23,7 +23,7 @@ function WhyChooseUs() {
             coding and website design.
           </p>
           <br />
-          <p>
+          <p className="text-white">
             At Techiee, we’re not just building websites, we’re crafting digital
             masterpieces that move your business forward. Join hands with us,
             and see the unforgettable results and success of your business.

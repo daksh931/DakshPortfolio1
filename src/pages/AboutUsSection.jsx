@@ -9,12 +9,12 @@ const AboutSection = () => {
 
   return (
    
-    <section className="bg-white py-16 px-8">
+    <section className=" py-16 px-8">
       <motion.div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
         <div>
-          <h2 className="text-orange-500 font-semibold">About Us</h2>
-          <h1 className="text-4xl font-bold text-gray-900 mt-2">
-            Why should you hire Techiee for your digital solutions?
+          {/* <h2 className="text-cyan-400/60 font-semibold">About Us</h2> */}
+          <h1 className="text-4xl font-bold text-[#ED5F5E] hover:text-[#F37384]  transition-colors delay-75 duration-200 cursor-pointer mt-2">
+           A reliable solution for your digital solutions
           </h1>
           <div className="mt-6 space-y-6">
             {features.map((feature, index) => (
@@ -23,10 +23,10 @@ const AboutSection = () => {
                   <CheckCircle size={24} color="orange" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold text-gray-900">
+                  <h3 className="text-xl font-semibold text-white">
                     {feature.title}
                   </h3>
-                  <p className="text-gray-600">{feature.description}</p>
+                  <p className="font-light text-white/98">{feature.description}</p>
                 </div>
               </div>
             ))}

@@ -13,9 +13,9 @@ export default function Navbar() {
     { path: "/work", label: "Our Work", icon: <Layers /> },
     { path: "/contact", label: "Contact Us", icon: <Mail /> },
   ];
-   
-// theme 
-const [theme, setTheme] = useState(() => {
+
+  // theme 
+  const [theme, setTheme] = useState(() => {
     // Get stored theme from localStorage or default to 'light'
     return typeof window !== "undefined" && localStorage.getItem("theme") === "dark"
       ? "dark"
@@ -40,21 +40,24 @@ const [theme, setTheme] = useState(() => {
   }, [theme]);
 
   return (
-    <div className="sticky  top-0 z-10">
-      <div className="shadow-lg hover:shadow-xl z-10 border-slate-300 border-b-[1px]  bg-white/5 backdrop-blur-lg">
+    <div className="sticky  top-0 z-10 bg-black ">
+      <div className="shadow-lg hover:shadow-xl z-10 border-slate-300 border-b-[1px]  backdrop-blur-lg">
         <div className=" w-full mx-0.5 px-6 py-1 sm:flex justify-between  ">
-          <div className=" px-0 py-3 flex justify-between align-middle self-center ">
+
+
+          <div className=" px-0 py-3  ">
+
             <div className="">
               <Link
                 to="/"
-                className="text-3xl font-bold hover:text-gray-600 text-orange-500"
+                className="text-3xl font-bold text-cyan-600 hover:text-[#A374FF] transition-colors delay-75 duration-200 "
               >
                 {/* <img src={Logo} alt="XTech" className="max-w-25 -p-2 rounded-3xl" /> */}
-                XTech
+                Daksh
               </Link>
             </div>
 
-            <div className="sm:hidden flex items-center ">
+            <div className="sm:hidden absolute left-1/2 right-1/2 ">
               <button
                 onClick={() => setIsOpen(!isOpen)}
                 className="text-gray-800 focus:outline-none "
@@ -64,15 +67,15 @@ const [theme, setTheme] = useState(() => {
             </div>
           </div>
 
-          <div className="flex items-center ">
+          <div id="nav items" className="   text-white font-mono mt-1 ">
             <div className="hidden sm:block">
               <div className="sm:flex  flex-col sm:flex-row sm:space-x-6 space-y-4 sm:space-y-0 hidden whitespace-nowrap  ">
-                <nav className="flex space-x-4">
+                <nav className="flex space-x-1">
                   {navLinks.map((link, index) => (
                     // <Link
                     //     key={index}
                     //     to={link.path}
-                    //     className="flex text-lg items-center relative group p-2 text-gray-900"
+                    //     className="flex text-lg items-center relative group p-2 "
                     // >
                     //     <span className="mr-2 z-10">{link.icon}</span>
 
@@ -90,7 +93,7 @@ const [theme, setTheme] = useState(() => {
                     <Link
                       key={index}
                       to={link.path}
-                      className="flex text-lg items-center relative group p-2 text-gray-900"
+                      className="flex text-md items-center relative group p-2 "
                     >
                       <span className="mr-2 z-10">{link.icon}</span>
 
@@ -98,7 +101,7 @@ const [theme, setTheme] = useState(() => {
                       <span className="relative z-10 overflow-hidden py-1 px-2 rounded-sm">
                         {/* Slanted Background (Top-Only) */}
                         <span
-                          className="absolute top-0 left-0 w-full h-full bg-orange-400 transform scale-y-0 group-hover:scale-y-100 transition-transform duration-300 origin-top z-0"
+                          className="absolute top-0 left-0 w-full h-full bg-cyan-600/80 transform scale-y-0 group-hover:scale-y-100 transition duration-500 origin-top z-0"
                           style={{
                             clipPath:
                               "polygon(0 0, 100% 10%, 100% 100%, 3% 100%)",
@@ -128,14 +131,13 @@ const [theme, setTheme] = useState(() => {
           {/* <div className={`absolute top-16 left-0 w-full bg-white shadow-sm transition-transform transform 
                     ${isOpen ? "translate-y-0" : "-translate-y-full"} sm:hidden`}> */}
           <div
-            className={`${
-              isOpen ? "block" : "hidden"
-            } flex sm:hidden items-center`}
+            className={`${isOpen ? "block" : "hidden"
+              } flex sm:hidden items-center`}
           >
             <div className="flex flex-col justify-between h-full p-6 space-y-4">
               <Link
                 to="/"
-                className="flex justify-between items-center text-gray-700 hover:text-gray-900 text-lg w-full"
+                className="flex justify-between items-center text-gray-700 hover: text-lg w-full"
               >
                 <span className="flex items-center space-x-3">
                   <span className="flex items-center justify-center w-6 h-6">
@@ -146,7 +148,7 @@ const [theme, setTheme] = useState(() => {
               </Link>
               <Link
                 to="/about"
-                className="flex justify-between items-center text-gray-700 hover:text-gray-900 text-lg w-full"
+                className="flex justify-between items-center text-gray-700 hover: text-lg w-full"
               >
                 <span className="flex items-center space-x-3">
                   <span className="flex items-center justify-center w-6 h-6">
@@ -157,7 +159,7 @@ const [theme, setTheme] = useState(() => {
               </Link>
               <Link
                 to="/services"
-                className="flex justify-between items-center text-gray-700 hover:text-gray-900 text-lg w-full"
+                className="flex justify-between items-center text-gray-700 hover: text-lg w-full"
               >
                 <span className="flex items-center space-x-3">
                   <span className="flex items-center justify-center w-6 h-6">
@@ -168,7 +170,7 @@ const [theme, setTheme] = useState(() => {
               </Link>
               <Link
                 to="/work"
-                className="flex justify-between items-center text-gray-700 hover:text-gray-900 text-lg w-full"
+                className="flex justify-between items-center text-gray-700 hover: text-lg w-full"
               >
                 <span className="flex items-center space-x-3">
                   <span className="flex items-center justify-center w-6 h-6">
@@ -179,7 +181,7 @@ const [theme, setTheme] = useState(() => {
               </Link>
               <Link
                 to="/contact"
-                className="flex justify-between items-center text-gray-700 hover:text-gray-900 text-lg w-full"
+                className="flex justify-between items-center text-gray-700 hover: text-lg w-full"
               >
                 <span className="flex items-center space-x-3">
                   <span className="flex items-center justify-center w-6 h-6">
@@ -190,6 +192,8 @@ const [theme, setTheme] = useState(() => {
               </Link>
             </div>
           </div>
+
+          <div></div>
         </div>
       </div>
     </div>
