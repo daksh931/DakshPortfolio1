@@ -138,6 +138,7 @@ export default function ProjectDetails() {
           />
         </motion.div>
       </div>  */}
+      
       {/* Features */}
       <div className="space-y-28 sm:px-5 sm:space-x-10">
         {project.map((feature, index) => (

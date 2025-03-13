@@ -14,9 +14,9 @@ function Footer() {
 
         {/* Second Section - Contact Us */}
         <div>
-          <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
-          <p className="text-sm ">Email: contact@company.com</p>
-          <p className="text-sm ">Phone: +123 456 7890</p>
+          <h3 className="text-lg font-semibold mb-4">Contact </h3>
+          <p className="text-sm ">Email: goyaldaksh5522@gmail.com</p>
+          <p className="text-sm ">Phone: +91 9463244207</p>
         </div>
 
         {/* Third Section - Useful Links */}
@@ -51,7 +51,7 @@ function Footer() {
       </div>
 
       <div className="mt-8 border-t border-gray-700 pt-6 text-center">
-        <p className="text-sm text-gray-400">Copyright © {new Date().getFullYear()} All Rights Reserved By Techiee</p>
+        <p className="text-sm text-gray-400">Copyright © {new Date().getFullYear()} All Rights Reserved </p>
       </div>
     </div>
   );

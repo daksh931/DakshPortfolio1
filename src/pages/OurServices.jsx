@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import cloud from '../assets/img/cloud.png';
 import webdev from '../assets/img/webdev.png';
 import devlopment from '../assets/img/devlopment.png';
@@ -7,11 +7,76 @@ import seo from '../assets/img/seo.png';
 import graphicDesigner from '../assets/img/graphicDesigner.png';
 import { motion } from "framer-motion";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
+import { useRef } from 'react';
+import gsap from 'gsap';
+import {ScrollTrigger} from "gsap/ScrollTrigger";
+import {ReactLenis} from "lenis/react"; 
+gsap.registerPlugin(ScrollTrigger);
 
 
 function OurServices() {
 
-  const data = [
+ 
+    const animateRefs = useRef([]);
+
+    
+  useEffect(() => {
+    animateRefs.current.forEach((el, idx) => {
+      gsap.fromTo(
+        el,
+        { opacity: 0, y: 80 },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 2,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: el,
+            start: "top 70%",
+            toggleActions: "play none none none",
+          },
+        }
+      );
+    });
+  }, []);
+
+    // useEffect(() => {
+    //   const tl = gsap.timeline({
+    //     scrollTrigger: {
+    //       trigger: animateRefs.current, // The section that contains all items
+    //       start: "top 20%", // Start when 80% of the container is in view
+    //       toggleActions: "play none none none",
+    //     },
+    //   });
+  
+    //   tl.fromTo(
+    //     animateRefs.current,
+    //     { opacity: 0, y: 100 },
+    //     { opacity: 1, y: 0, duration: 2, stagger: 0.3, ease: "power3.out" }
+    //   );
+    // }, []);
+    // const elements = gsap.utils.toArray(".animate-item"); // Get all elements
+
+    // useEffect(() => {
+    //   elements.fromTo(".animate-item",
+    //   { opacity: 0, y: 100 },
+    //   {
+    //     opacity: 1,
+    //     y: 0,
+    //     duration: 3,
+    //     delay:1,
+    //     stagger: 0.7, // Delay between animations
+    //     ease: "power3.out",
+    //     scrollTrigger: {
+    //       trigger: ".animate-item",
+    //       start: "top 70%", // Start animation when 80% of the element is in view
+    //       toggleActions: "play none none none",
+    //     },
+    //   }
+    //  )
+    // }, [])
+ 
+    const data = [
     {
       "image": graphicDesigner,
       "title": "Graphic Designer",
@@ -46,35 +111,40 @@ function OurServices() {
 
 
   return (
-    <div className="mx-8 md:mx-24 overflow-hidden">
-      <h2 className="text-4xl font-bold text-center mb-10 text-[#A374FF]  hover:text-[#7467B7] transition-colors delay-75 duration-200 "> Services</h2>
+    <div className="  mx-8 md:mx-24 overflow-hidden ">
+      <h2  className="text-4xl font-bold text-center mb-10 text-[#A374FF]  hover:text-[#7467B7] transition-colors delay-75 duration-200 "> Services</h2>
+        <div>
         {data.map((item, idx) => (
           <div 
           key={idx}
-          className={`my-18 flex flex-col items-center ${idx % 2 !== 0 ? 'md:items-end': 'md:items-start'} w-full h-full `} >
+          // ref={scrollRef}
+          ref={(el) => animateRefs.current[idx] = el}
+          className={`animate-item  my-18 flex flex-col items-center ${idx % 2 !== 0 ? 'md:items-end': 'md:items-start'}  h-full `} >
           <ServiceCard
             key={idx}
+          
             image={item.image}
             title={item.title}
             description={item.description}
           />
       </div>
         ))}
+        </div>
 
     </div>
   );
 }
 
-const ServiceCard = ({ image, title, description }) => (
+const ServiceCard = ({  image, title, description }) => (
  
   
 
- <div className="shadow-md  cursor-pointer bg-black shadow-cyan-500/30  hover:shadow-pink-500/50 group  hover:scale-103 transition duration-500 rounded-3xl w-[75vw] md:h-[60vh] md:w-[47vw] ">
+ <div  className="shadow-md  cursor-pointer bg-black shadow-cyan-500/30  hover:shadow-pink-500/50 group  hover:scale-103 transition duration-500 rounded-3xl w-[75vw] md:h-[60vh] md:w-[42vw] ">
    
     <div className=" flex flex-col md:flex-row md:items-center h-full md:justify-between text-center">
     {/* <div className={`flex flex-col md:flex-row md:items-center md:justify-between text-center ${isReversed ? 'md:flex-row-reverse' : ''}`}> */}
       {/* image */}
-      <div className="flex justify-center md:justify-start  md:items-center h-[40vw]  md:h-[60vh]  md:w-[22vw] bg-cover overflow-hidden">
+      <div className="flex justify-center md:justify-start  md:items-center h-[40vw]  md:h-[60vh]  md:w-[17vw] bg-cover overflow-hidden">
         <img src={image} alt={title} className=" object-contain bg-cover" />
       </div>
       
@@ -86,8 +156,8 @@ const ServiceCard = ({ image, title, description }) => (
 
       {/* title & desc  */}
       <div className="flex flex-col py-5 px-3 md:w-[20vw] md:h-full  md:justify-evenly  text-center">
-        <h3 className="md:text-3xl font-semibold mb-2 text-white group-hover:text-[#E443AE] transition-colors delay-75 duration-200">{title} </h3>
-        <p className="text-white text-xl mb-4 ">{description}</p>
+        <h3 className="md:text-2xl font-semibold mb-2 text-white group-hover:text-[#E443AE] transition-colors delay-75 duration-200">{title} </h3>
+        <p className="text-white text-md mb-4 ">{description}</p>
       </div>
 
 
