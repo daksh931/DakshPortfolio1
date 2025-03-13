@@ -6,6 +6,20 @@ import { Moon, Sun } from "lucide-react";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    if(isOpen){
+      document.body.style.overflow = "hidden";
+    }
+    else {
+      document.body.style.overflow = "auto"; // Enable scrolling
+    }
+
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [isOpen])
+
   const navLinks = [
     { path: "/", label: "Home", icon: <Home /> },
     { path: "/about", label: "About Me ", icon: <Info /> },
@@ -41,11 +55,11 @@ export default function Navbar() {
 
   return (
     <div className="sticky  top-0 z-10 bg-black ">
-      <div className="shadow-lg hover:shadow-xl z-10 border-slate-300 border-b-[1px]  backdrop-blur-lg">
-        <div className=" w-full mx-0.5 px-6 py-1 sm:flex justify-between  ">
+      <div className="shadow-lg hover:shadow-xl z-10   ">
+        <div className=" w-full mx-0.5  py-1 sm:flex justify-between  ">
 
 
-          <div className=" px-0 py-3  ">
+          <div className=" py-3 px-6 flex justify-between  ">
 
             <div className="">
               <Link
@@ -57,25 +71,28 @@ export default function Navbar() {
               </Link>
             </div>
 
-            <div className="sm:hidden absolute left-1/2 right-1/2 ">
+            <div className="sm:hidden text-white  ">
               <button
                 onClick={() => setIsOpen(!isOpen)}
-                className="text-gray-800 focus:outline-none "
+                className="focus:outline-none text-white"
               >
-                {isOpen ? <X size={28} /> : <Menu size={28} />}
+                {isOpen ? <X size={28} /> : <Menu  size={28} />}
               </button>
             </div>
           </div>
 
+
+          {/* desktop nav items map  */}
           <div id="nav items" className="   text-white font-mono mt-1 ">
             <div className="hidden sm:block">
               <div className="sm:flex  flex-col sm:flex-row sm:space-x-6 space-y-4 sm:space-y-0 hidden whitespace-nowrap  ">
                 <nav className="flex space-x-1">
                   {navLinks.map((link, index) => (
+                    
                     // <Link
                     //     key={index}
                     //     to={link.path}
-                    //     className="flex text-lg items-center relative group p-2 "
+                    //     className="flex text-2xl items-center relative group p-2 "
                     // >
                     //     <span className="mr-2 z-10">{link.icon}</span>
 
@@ -132,12 +149,12 @@ export default function Navbar() {
                     ${isOpen ? "translate-y-0" : "-translate-y-full"} sm:hidden`}> */}
           <div
             className={`${isOpen ? "block" : "hidden"
-              } flex sm:hidden items-center`}
+              } flex sm:hidden items-center relative ease-in-out delay-100`}
           >
-            <div className="flex flex-col justify-between h-full p-6 space-y-4">
+            <div className="absolute top-0 inset-0 bg-black/80 backdrop-blur-sm h-[100vh] font-mono space-y-9 w-full flex flex-col p-6">
               <Link
                 to="/"
-                className="flex justify-between items-center text-gray-700 hover: text-lg w-full"
+                className="flex justify-between items-center text-white hover: text-2xl w-full"
               >
                 <span className="flex items-center space-x-3">
                   <span className="flex items-center justify-center w-6 h-6">
@@ -148,7 +165,7 @@ export default function Navbar() {
               </Link>
               <Link
                 to="/about"
-                className="flex justify-between items-center text-gray-700 hover: text-lg w-full"
+                className="flex justify-between items-center text-white hover: text-2xl w-full"
               >
                 <span className="flex items-center space-x-3">
                   <span className="flex items-center justify-center w-6 h-6">
@@ -159,7 +176,7 @@ export default function Navbar() {
               </Link>
               <Link
                 to="/services"
-                className="flex justify-between items-center text-gray-700 hover: text-lg w-full"
+                className="flex justify-between items-center text-white hover: text-2xl w-full"
               >
                 <span className="flex items-center space-x-3">
                   <span className="flex items-center justify-center w-6 h-6">
@@ -170,7 +187,7 @@ export default function Navbar() {
               </Link>
               <Link
                 to="/Contact Me"
-                className="flex justify-between items-center text-gray-700 hover: text-lg w-full"
+                className="flex justify-between items-center text-white hover: text-2xl w-full"
               >
                 <span className="flex items-center space-x-3">
                   <span className="flex items-center justify-center w-6 h-6">
@@ -181,7 +198,7 @@ export default function Navbar() {
               </Link>
               <Link
                 to="/contact"
-                className="flex justify-between items-center text-gray-700 hover: text-lg w-full"
+                className="flex justify-between items-center text-white hover: text-2xl w-full"
               >
                 <span className="flex items-center space-x-3">
                   <span className="flex items-center justify-center w-6 h-6">

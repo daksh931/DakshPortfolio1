@@ -13,20 +13,21 @@ gsap.registerPlugin(ScrollTrigger);
 const contentData = [
   {
     image: heroImg1,
-    title: "Best Web Development Company",
-    description: "We create high-performing websites that boost your online presence.",
+    title: "Building Scalable Web Applications",
+    description: "I specialize in creating high-performance, scalable web applications using modern technologies.",
   },
   {
     image: webdev,
-    title: "Transform Your Digital Experience",
-    description: "Our cutting-edge solutions help your business grow in the digital era.",
+    title: "MERN Stack & Backend Development",
+    description: "Expertise in MERN stack, Node.js, and scalable backend solutions for businesses and startups.",
   },
   {
     image: admin,
-    title: "Custom Web Solutions for You",
-    description: "We build tailored websites that match your unique business needs.",
+    title: "Cloud & API Integrations",
+    description: "Seamless API integrations, cloud deployment, and optimized server-side logic for robust applications.",
   },
 ];
+
 
 function HeroSection() {
   const [index, setIndex] = useState(0);
@@ -73,7 +74,7 @@ function HeroSection() {
   return (
     <>
 
-      <div className="relative flex flex-col md:flex-row items-center  mx-20 px-6 py-12 space-y-8 md:space-y-0 md:space-x-8 overflow-x-hidden  min-h-[80vh] ">
+      <div className="relative flex flex-col md:flex-row items-center mx-5 sm:mx-20 px-6 py-12 space-y-8 md:space-y-0 md:space-x-8 overflow-x-hidden  min-h-[80vh] ">
         {/* Left Side Image (Comes from Left) */}
         <motion.div
           key={contentData[index].image}
@@ -104,7 +105,7 @@ function HeroSection() {
             className="text-3xl text-center sm:text-4xl font-bold text-[#5D9BF6] hover:text-[#1CCBF3] transition-colors delay-75 duration-200 cursor-pointer mb-4">{contentData[index].title}</h2>
           <p className="font-semibold text-lg text-center sm:text-xl text-[#DD5E81] mb-4">{contentData[index].description}</p>
           <button
-            className="explore cursor-pointer px-6 py-3 bg-cyan-400/60 text-white text-lg font-semibold rounded-lg shadow-lg hover:bg-cyan-500/80 transition duration-300"
+            className="explore mt-10 cursor-pointer px-6 py-3 bg-cyan-400/60 text-white text-lg font-semibold rounded-lg shadow-lg hover:bg-cyan-500/80 transition duration-300"
           >
             Explore Now
           </button>
