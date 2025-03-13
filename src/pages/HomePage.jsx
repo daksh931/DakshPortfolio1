@@ -8,7 +8,7 @@ import OurWork from "./OurWork";
 const HomePage = () => {
   return (
     <>
-    <div className="bg-black/97 -mt-1">
+    <div className="bg-black/97 -mt-1 max-w-[100vw]">
       <HeroSection />
       <AboutSection />
       <OurServices />

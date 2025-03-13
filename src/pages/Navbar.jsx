@@ -8,10 +8,10 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const navLinks = [
     { path: "/", label: "Home", icon: <Home /> },
-    { path: "/about", label: "About Us", icon: <Info /> },
-    { path: "/services", label: "Our Services", icon: <Briefcase /> },
-    { path: "/work", label: "Our Work", icon: <Layers /> },
-    { path: "/contact", label: "Contact Us", icon: <Mail /> },
+    { path: "/about", label: "About Me ", icon: <Info /> },
+    { path: "/services", label: " Services", icon: <Briefcase /> },
+    { path: "/work", label: "My Work", icon: <Layers /> },
+    { path: "/contact", label: "Contact Me", icon: <Mail /> },
   ];
 
   // theme 
@@ -154,7 +154,7 @@ export default function Navbar() {
                   <span className="flex items-center justify-center w-6 h-6">
                     <Info />
                   </span>
-                  <span>About Us</span>
+                  <span>About Me </span>
                 </span>
               </Link>
               <Link
@@ -165,18 +165,18 @@ export default function Navbar() {
                   <span className="flex items-center justify-center w-6 h-6">
                     <Briefcase />
                   </span>
-                  <span>Our Services</span>
+                  <span> Services</span>
                 </span>
               </Link>
               <Link
-                to="/work"
+                to="/Contact Me"
                 className="flex justify-between items-center text-gray-700 hover: text-lg w-full"
               >
                 <span className="flex items-center space-x-3">
                   <span className="flex items-center justify-center w-6 h-6">
                     <Layers />
                   </span>
-                  <span>Our Work</span>
+                  <span> My Work</span>
                 </span>
               </Link>
               <Link
@@ -187,7 +187,7 @@ export default function Navbar() {
                   <span className="flex items-center justify-center w-6 h-6">
                     <Mail />
                   </span>
-                  <span>Contact Us</span>
+                  <span>Contact Me</span>
                 </span>
               </Link>
             </div>
