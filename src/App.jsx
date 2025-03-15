@@ -13,7 +13,7 @@ import Footer from "./pages/Footer";
 function App() {
   const scrollYProgress = useScroll().scrollYProgress;
   return (
-    <div className="sm:max-w-[98.7vw]">
+    <div className=" ">
    
 
       <Navbar />

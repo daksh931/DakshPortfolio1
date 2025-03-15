@@ -77,11 +77,7 @@ function OurServices() {
     // }, [])
  
     const data = [
-    {
-      "image": graphicDesigner,
-      "title": "Graphic Designer",
-      "description": "Wanna grow organically, then SEO is the best choice for your business. We help you boost your search engine rankings and make your brand visible to your customers on search engines."
-    },
+    
     {
       "image": devlopment,
       "title": "Web Development",
@@ -89,12 +85,13 @@ function OurServices() {
     },
     {
       "image": it,
-      "title": "Content Writing",
-      "description": "Wanna grow organically, then SEO is the best choice for your business. We help you boost your search engine rankings and make your brand visible to your customers on search engines."
+      "title": "Full Stack Development",
+    "description": "From frontend to backend, I create fully functional web applications using the MERN stack (MongoDB, Express, React, Node.js) with a focus on performance and security.",
     },
+  
     {
-      "image": devlopment,
-      "title": "Photography",
+      "image": cloud,
+      "title": "Cloud Services",
       "description": "Wanna grow organically, then SEO is the best choice for your business. We help you boost your search engine rankings and make your brand visible to your customers on search engines."
     },
     {
@@ -102,16 +99,11 @@ function OurServices() {
       "title": "SEO Optimization",
       "description": "Wanna grow organically, then SEO is the best choice for your business. We help you boost your search engine rankings and make your brand visible to your customers on search engines."
     },
-    {
-      "image": cloud,
-      "title": "Cloud Services",
-      "description": "Wanna grow organically, then SEO is the best choice for your business. We help you boost your search engine rankings and make your brand visible to your customers on search engines."
-    }
   ]
 
 
   return (
-    <div className="  mx-8 md:mx-24 overflow-hidden ">
+    <div className="  px-8 md:px-24 overflow-hidden bg-black/97 -my-1 ">
       <h2  className="text-4xl font-bold text-center mb-10 text-[#A374FF]  hover:text-[#7467B7] transition-colors delay-75 duration-200 "> Services</h2>
         <div>
         {data.map((item, idx) => (

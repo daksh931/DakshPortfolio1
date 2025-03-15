@@ -9,7 +9,7 @@ const AboutSection = () => {
 
   return (
    
-    <section className=" py-16 px-8">
+    <section className=" py-16 px-8 bg-black/97 -my-1 ">
       <motion.div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
         <div>
           {/* <h2 className="text-cyan-400/60 font-semibold">About Us</h2> */}
@@ -32,11 +32,11 @@ const AboutSection = () => {
             ))}
           </div>
         </div>
-        <div className="flex justify-center   overflow-hidden ">
+        <div className="flex justify-center overflow-hidden ">
           <motion.img
             src={admin}
             alt="Illustration"
-            className=" w-full "
+            className="w-[60vw] sm:w-full "
             
             initial={{ opacity: 0, x: 100 }} // Starts outside the screen
             whileInView={{ opacity: 1, x: 0 }} // Moves into view
@@ -52,25 +52,26 @@ const AboutSection = () => {
 
 const features = [
   {
-    title: "Get Complete solutions under one roof",
+    title: "Full-Stack Development Expertise",
     description:
-      "Techiee helps you to provide complete solutions under one roof like Website Development, Hybrid App, SEO, Graphic design, IT Consultancy.",
+      "I specialize in building scalable, high-performance web applications using the MERN stack, Node.js, and cloud-based solutions.",
   },
   {
-    title: "Provides Quality Work",
+    title: "Quality-Driven Development",
     description:
-      "Techiee helps you to Our experienced team’s main goal is to provide you the Quality Work in less time.",
+      "Delivering clean, efficient, and maintainable code with a strong focus on performance and best practices.",
   },
   {
-    title: "Experienced Team",
+    title: "Industry Experience",
     description:
-      "We have an experienced team who know how to serve the work with accuracy.",
+      "With experience in backend architecture, API development, and cloud deployment, I create reliable and optimized solutions.",
   },
   {
-    title: "Market competitive rates",
+    title: "Tailored Solutions",
     description:
-      "Techiee offers affordable customized packages that cater to your needs.",
+      "Custom web development solutions designed to meet the unique needs of businesses and startups.",
   },
 ];
+
 
 export default AboutSection;

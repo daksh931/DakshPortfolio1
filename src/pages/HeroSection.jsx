@@ -74,7 +74,7 @@ function HeroSection() {
   return (
     <>
 
-      <div className="relative flex flex-col md:flex-row items-center mx-5 sm:mx-20 px-6 py-12 space-y-8 md:space-y-0 md:space-x-8 overflow-x-hidden  min-h-[80vh] ">
+      <div className="relative flex flex-col md:flex-row items-center  sm:px-20 px-6 py-12 space-y-8 md:space-y-0 md:space-x-8 overflow-hidden bg-black/97  min-h-[80vh] ">
         {/* Left Side Image (Comes from Left) */}
         <motion.div
           key={contentData[index].image}
@@ -114,7 +114,9 @@ function HeroSection() {
       </div>
 
       {/* explore gsap button  */}
-      <div onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} className=" justify-self-center text-white flex justify-center  font-bold items-center text-center text-[1.3em] w-[13em] relative">
+      <div className="bg-black/97">
+
+      <div onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} className=" pb-10 justify-self-center text-white flex justify-center  font-bold items-center text-center text-[1.3em] w-[13em] relative">
         <div ref={circleref} className="absolute left-0 circle h-[1.8em]  w-[1.8em] rounded-full bg-pink-600/80  ">
         </div>
 
@@ -124,6 +126,7 @@ function HeroSection() {
             </span>
 
         </button>
+      </div>
       </div>
     </>
   );

@@ -54,8 +54,8 @@ export default function Navbar() {
   }, [theme]);
 
   return (
-    <div className="sticky  top-0 z-10 bg-black ">
-      <div className="shadow-lg hover:shadow-xl z-10   ">
+    <div className="sticky  top-0 bg-black/95 z-20">
+      <div className="shadow-lg hover:shadow-xl">
         <div className=" w-full mx-0.5  py-1 sm:flex justify-between  ">
 
 
@@ -149,9 +149,9 @@ export default function Navbar() {
                     ${isOpen ? "translate-y-0" : "-translate-y-full"} sm:hidden`}> */}
           <div
             className={`${isOpen ? "block" : "hidden"
-              } flex sm:hidden items-center relative ease-in-out delay-100`}
+              } flex sm:hidden items-center relative  `}
           >
-            <div className="absolute top-0 inset-0 bg-black/80 backdrop-blur-sm h-[100vh] font-mono space-y-9 w-full flex flex-col p-6">
+            <div className="absolute top-0 inset-0  bg-black/80 backdrop-blur-sm h-[100vh] font-mono space-y-9 w-full flex flex-col p-6">
               <Link
                 to="/"
                 className="flex justify-between items-center text-white hover: text-2xl w-full"

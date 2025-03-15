@@ -20,7 +20,7 @@ function ContactUs() {
   };
 
   return (
-    <div className=" px-6 lg:px-24 py-16">
+    <div className=" px-6 lg:px-24 py-16 bg-black/97 -my-1">
       <div className='flex justify-center my-12'>
 
       <h2  className="text-3xl text-center p-5 w-[30vw] font-bold text-cyan-600 hover:text-[#A374FF] transition-colors delay-75 duration-200  cursor-pointer" >Contact Me</h2>

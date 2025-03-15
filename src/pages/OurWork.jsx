@@ -38,7 +38,7 @@ const projects = [
 
 export default function OurWork() {
   return (
-    <div className="max-w-6xl mx-auto px-6 py-12">
+    <div className="px-[10vw]  py-12 bg-black/97 -my-1 overflow-hidden">
       {/* Heading Section */}
       <div className="text-center mb-8 group">
         <h2 className="text-4xl font-bold text-[#147DD2]/70 group-hover:text-[#147DD2]/92 transition-colors delay-75 duration-300 text-center  cursor-pointer ">Projects</h2>
@@ -48,7 +48,7 @@ export default function OurWork() {
       </div>
 
       {/* Grid Section */}
-      <div className="grid grid-cols-1 sm:grid-cols-2  space-y-2.5 space-x-6.5 gap-6">
+      <div className="flex flex-col  sm:grid sm:grid-cols-2  space-y-2.5 sm:space-x-6.5 gap-6">
         {projects.map((project) => (
           <ProjectCard key={project.id} project={project} />
         ))}
@@ -66,7 +66,7 @@ function ProjectCard({ project }) {
     <motion.div
       whileHover={{ scale: 1.006, boxShadow: "0px 10px 25px rgba(0,0,0,0.15)" }}
       whileTap={{ scale: 0.98 }}
-      className="relative cursor-pointer rounded-xl overflow-hidden border-none transition duration-500 bg-black/90 text-white"
+      className="relative cursor-pointer rounded-xl overflow-hidden border-none transition duration-500   bg-black/97 text-white"
       onClick={() => navigate(`/projects/${project.id}`)}
     >
       <div className="p-2  group">
