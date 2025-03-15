@@ -51,10 +51,25 @@ function HeroSection() {
 
   useEffect(() => {
     hoverTL.current = gsap.timeline({ paused: true })
-      .to(circleref.current, { width: "100%", ease: "elastic.out(0.45)", duration: 0.5 })
+      .to(circleref.current, { width: "100%", ease: "elastic.out(0.25)", duration: 0.6 })
       .to(circleref.current, { width: "15%", left: "76%", ease: "elastic.out(0.25)", duration: 0.5 });
   }, []);
 
+  useEffect(() => {
+    const timeout1 = setTimeout(() => {
+      hoverTL.current.restart();
+  
+      // Reverse after a delay
+      const timeout2 = setTimeout(() => {
+        hoverTL.current.reverse();
+      }, 1500);
+      
+      return () => clearTimeout(timeout2);
+    }, 2500);
+  
+    return () => clearTimeout(timeout1);
+
+  }, [])
   const onMouseEnter = () => {  
     hoverTL.current.restart();
   };

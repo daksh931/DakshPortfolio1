@@ -20,8 +20,10 @@ function ContactUs() {
   };
 
   return (
-    <div className=" px-6 lg:px-24 py-16 bg-black/97 -my-1">
-      <div className='flex justify-center my-12'>
+    <div className=" px-6 lg:px-24 py-1 bg-black/97 -my-1">
+      <div className='my-24'>
+
+      <div className='flex justify-center -mt-12 mb-12'>
 
       <h2  className="text-3xl text-center p-5 w-[30vw] font-bold text-cyan-600 hover:text-[#A374FF] transition-colors delay-75 duration-200  cursor-pointer" >Contact Me</h2>
       </div>
@@ -29,7 +31,7 @@ function ContactUs() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
         
         {/* Left side form */}
-        <div className="space-y-6">
+        <div className="space-y-6 ">
           <form onSubmit={handleSubmit} className="bg-white/90 p-6 rounded-lg shadow-xl focus:outline-none focus:ring-0">
             <div>
               <label htmlFor="name" className="block text font-medium text-[#0092B8]">Name</label>
@@ -98,6 +100,8 @@ function ContactUs() {
           </div>
         </div>
       </div>
+      </div>
+
     </div>
   );
 }
