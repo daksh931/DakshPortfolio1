@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 function WhyChooseUs() {
   return  (
-    <div className="my-16 px-6 lg:px-24 bg-black/97  ">
+    <div className="my-16 px-6 lg:px-24 bg-[#0E100F]  ">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center ">
         <div className="text-left">
           <h1 className="text-4xl font-bold mb-15 text-[#A374FF] hover:text-[#A165FF]/70 cursor-pointer transition-colors delay-75 duration-200 mt-2">

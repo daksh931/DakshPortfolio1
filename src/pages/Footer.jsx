@@ -37,10 +37,10 @@ function Footer() {
             <a href="https://www.facebook.com" className="text-gray-400 hover:text-blue-600 transition-colors">
               <FaFacebook size={24} />
             </a>
-            <a href="https://www.twitter.com" className="text-gray-400 hover:text-blue-400 transition-colors">
+            <a href="https://x.com/goyal5522" className="text-gray-400 hover:text-blue-400 transition-colors">
               <FaTwitter size={24} />
             </a>
-            <a href="https://www.linkedin.com" className="text-gray-400 hover:text-blue-700 transition-colors">
+            <a href="https://www.linkedin.com/in/daksh-goyal-550679215/" className="text-gray-400 hover:text-blue-700 transition-colors">
               <FaLinkedin size={24} />
             </a>
             <a href="https://www.instagram.com" className="text-gray-400 hover:text-pink-600 transition-colors">

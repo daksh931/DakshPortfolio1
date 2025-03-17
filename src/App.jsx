@@ -9,9 +9,37 @@ import ContactUs from "./pages/ContactUs";
 import Navbar from "./pages/Navbar";
 import { motion, useScroll } from "framer-motion";
 import Footer from "./pages/Footer";
+import Lenis from "@studio-freight/lenis"; // Import Lenis
+import { useEffect, useRef } from "react";
+
 
 function App() {
   const scrollYProgress = useScroll().scrollYProgress;
+  // const lenisRef = useRef(null);
+
+  // useEffect(() => {
+  //   lenisRef.current = new Lenis({
+  //     smooth: true,
+  //     lerp: 0.3,
+  //   });
+
+  //   let lastTime = 0;
+
+  //   // Throttle the scroll updates for performance
+  //   const raf = (time) => {
+  //     if (time - lastTime > 10) { // Only update every 10ms (you can adjust this)
+  //       lenisRef.current.raf(time);
+  //       lastTime = time;
+  //     }
+  //     requestAnimationFrame(raf);
+  //   };
+
+  //   requestAnimationFrame(raf);
+
+  //   return () => {
+  //     lenisRef.current.destroy();
+  //   };
+  // }, []);
   return (
     <div className=" ">
    

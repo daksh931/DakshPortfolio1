@@ -20,7 +20,7 @@ function ContactUs() {
   };
 
   return (
-    <div className=" px-6 lg:px-24 py-1 bg-black/97 -my-1">
+    <div className=" px-6 lg:px-24 py-1 bg-[#0E100F] -my-1">
       <div className='my-24'>
 
       <div className='flex justify-center -mt-12 mb-12'>

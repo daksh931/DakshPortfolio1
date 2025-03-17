@@ -10,7 +10,7 @@ import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 import { useRef } from 'react';
 import gsap from 'gsap';
 import {ScrollTrigger} from "gsap/ScrollTrigger";
-import {ReactLenis} from "lenis/react"; 
+
 gsap.registerPlugin(ScrollTrigger);
 
 
@@ -103,7 +103,7 @@ function OurServices() {
 
 
   return (
-    <div className="  px-8 md:px-24 overflow-hidden bg-black/97 -my-1 ">
+    <div className="  px-8 md:px-24 overflow-hidden bg-[#0E100F] -my-1 ">
       <h2  className="text-4xl font-bold text-center mb-10 text-[#A374FF]  hover:text-[#7467B7] transition-colors delay-75 duration-200 "> Services</h2>
         <div>
         {data.map((item, idx) => (
@@ -131,7 +131,7 @@ const ServiceCard = ({  image, title, description }) => (
  
   
 
- <div  className="shadow-md  cursor-pointer bg-black shadow-cyan-500/30  hover:shadow-pink-500/50 group  hover:scale-103 transition duration-500 rounded-3xl w-[75vw] md:h-[60vh] md:w-[42vw] ">
+ <div  className="shadow-md  cursor-pointer bg-[#0E100F] shadow-cyan-500/30  hover:shadow-pink-500/50 group  hover:scale-103 transition duration-500 rounded-3xl w-[75vw] md:h-[60vh] md:w-[42vw] ">
    
     <div className=" flex flex-col md:flex-row md:items-center h-full md:justify-between text-center">
     {/* <div className={`flex flex-col md:flex-row md:items-center md:justify-between text-center ${isReversed ? 'md:flex-row-reverse' : ''}`}> */}
@@ -157,7 +157,9 @@ const ServiceCard = ({  image, title, description }) => (
       <div className="flex h-full   px-2">
         <div id="know more" className="w-full md:h-full  flex items-end  justify-end  pb-1 pr-1 text-white font-mono">
           <div className=" flex md:space-x-1.5 text-xl pb-2  group-hover:text-pink-500/50 transition-colors delay-75 duration-200">
-            <FaArrowUpRightFromSquare />
+          
+              <FaArrowUpRightFromSquare />
+              
 
           </div>
         </div>

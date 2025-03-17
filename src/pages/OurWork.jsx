@@ -10,35 +10,25 @@ import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 
 const projects = [
   {
+    id: "visionClasses",
+    name: "vision Classes",
+    image: it,
+  },
+  {
     id: "recotech",
     name: "Recotech.co",
     image: recotech,
-  },
-  {
-    id: "music-school",
-    name: "Music School",
-    image: MusicSchool,
   },
   {
     id: "signoracucina",
     name: "signoracucina-az",
     image: signoracucina,
   },
-  {
-    id: "slabpro",
-    name: "Slab Pro",
-    image: it,
-  },
-  {
-    id: "visionClasses",
-    name: "vision Classes",
-    image: it,
-  },
 ];
 
 export default function OurWork() {
   return (
-    <div className="px-[10vw]  py-12 bg-black/97 -my-1 overflow-hidden">
+    <div className="px-[10vw]  py-12 bg-[#0E100F] -my-1 overflow-hidden">
       {/* Heading Section */}
       <div className="text-center mb-8 group">
         <h2 className="text-4xl font-bold text-[#147DD2]/70 group-hover:text-[#147DD2]/92 transition-colors delay-75 duration-300 text-center  cursor-pointer ">Projects</h2>
@@ -66,7 +56,7 @@ function ProjectCard({ project }) {
     <motion.div
       whileHover={{ scale: 1.006, boxShadow: "0px 10px 25px rgba(0,0,0,0.15)" }}
       whileTap={{ scale: 0.98 }}
-      className="relative cursor-pointer rounded-xl overflow-hidden border-none transition duration-500   bg-black/97 text-white"
+      className="relative cursor-pointer rounded-xl overflow-hidden border-none transition duration-500   bg-[#0E100F] text-white"
       onClick={() => navigate(`/projects/${project.id}`)}
     >
       <div className="p-2  group">
@@ -84,7 +74,7 @@ function ProjectCard({ project }) {
       </div>
       <div id="know more" className="w-full flex justify-end pb-1 pr-1 text-white font-mono group-hover:text-[#91A810] transition-colors delay-75 duration-200 ">
         <div className=" flex space-x-1.5 text-lg items-center ">
-              <FaArrowUpRightFromSquare />
+                <a href='https://vision-frontend-rho.vercel.app/'  target="_blank"  rel="noopener noreferrer"> <FaArrowUpRightFromSquare /> </a>
           
         </div>
       </div>

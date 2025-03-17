@@ -12,6 +12,7 @@ gsap.registerPlugin(ScrollTrigger);
 const AboutSection = () => {
 
   const textRef = useRef(null);
+  const descRefs = useRef([]);
 
   useEffect(() => {
     if (!textRef.current) return;
@@ -22,20 +23,42 @@ const AboutSection = () => {
       {
         color: "#1CCBF3",
         opacity:1, 
-        stagger: 0.01,
+        stagger: 0.002,
         ease: "power2.out",
         scrollTrigger: {
           trigger: textRef.current,
-          start: "top 75%",
-          end: "top 15%",
+          start: "top 45%",
+          end: "top 18%",
           scrub: 1,
         },
       }
     );
+   
+
+    descRefs.current.forEach((desc, index) => {
+      if (!desc) return;
+
+      gsap.fromTo(
+        desc,
+        { color: "#888" }, // Start with grey
+        {
+          color: "#FFF", // Transition to white
+          stagger: 0.02,
+          ease: "power2.out",
+          scrollTrigger: {
+            trigger: textRef.current,
+            start: "top 45%",
+            end: "top 20%",
+            scrub: true,
+          },
+        }
+      );
+    });
+
   }, []);
 return (
 
-  <section className=" py-16 px-8 bg-black/97 -my-1 ">
+  <section className=" py-16 px-8 bg-[#0E100F] -my-1 ">
     <motion.div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
       <div>
         {/* <h2 className="text-cyan-400/60 font-semibold">About Us</h2> */}
@@ -46,15 +69,16 @@ return (
         </h1>
         <div className="mt-6 space-y-6">
           {features.map((feature, index) => (
-            <div key={index} className="flex items-start space-x-4 group">
+            <div  key={index} className="flex items-start space-x-4 group">
               <div>
                 <CheckCircle size={24} color="orange" />
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-white">
+                <h3  className="text-xl font-bold text-white">
                   {feature.title}
                 </h3>
-                <p className="font-light text-white/98">{feature.description}</p>
+                <p  ref={(el) => (descRefs.current[index] = el)}
+                    className="font-semibold text-gray-500"> {feature.description}  </p>
               </div>
             </div>
           ))}

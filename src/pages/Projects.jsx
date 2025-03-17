@@ -96,7 +96,7 @@ export default function ProjectDetails() {
   const [paused, setPaused] = useState(false);
 
   return (
-    <div className="px-6 lg:px-24 py-16 bg-black/97">
+    <div className="px-6 lg:px-24 py-16 bg-[#191917]">
       {/* Breadcrumb Navigation */}
       <div className="mb-6 text-gray-500 text-sm">
         <span
