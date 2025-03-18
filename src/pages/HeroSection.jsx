@@ -152,6 +152,7 @@ function HeroSection() {
           </div>
 
           <button className="text-nowrap flex items-center  z-10 relative cursor-pointer">
+         
             Connect with Me
             <span className="pl-2">   <FaLongArrowAltRight />
             </span>

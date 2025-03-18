@@ -4,6 +4,7 @@ import ContactUs from "./ContactUs";
 import HeroSection from "./HeroSection";
 import OurServices from "./OurServices";
 import OurWork from "./OurWork";
+import Services from "./Services";
 
 const HomePage = () => {
   return (
@@ -11,7 +12,8 @@ const HomePage = () => {
     <div className="bg-[#0E100F]  -mt-1 max-w-[100vw]">
       <HeroSection />
       <AboutSection />
-      <OurServices />
+      <Services />
+      {/* <OurServices /> */}
       <WhyChooseUs />
       <OurWork />
       <ContactUs />

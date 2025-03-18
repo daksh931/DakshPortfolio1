@@ -17,6 +17,11 @@ import sig_image2 from "../assets/signorvino_wineSite/2.png";
 import sig_image3 from "../assets/signorvino_wineSite/3.png";
 import sig_image4 from "../assets/signorvino_wineSite/4.png";
 import sig_image5 from "../assets/signorvino_wineSite/5.png";
+
+import vis_image1 from "../assets/Vision_Website/1.png";
+import vis_image2 from "../assets/Vision_Website/2.png";
+import vis_image3 from "../assets/Vision_Website/3.png";
+import vis_image4 from "../assets/Vision_Website/4.png";
 const projectData = {
     recotech: [{
         title: "Recotech",
@@ -126,32 +131,32 @@ const projectData = {
         {
             "title": "Vision Classes - Empowering Students for a Brighter Future",
             "description": "Vision Classes is a comprehensive online learning platform designed to help students excel in School Education, Engineering (B.Tech), and Government Job Preparation. With a user-friendly interface and advanced technology stack, Vision Classes ensures a seamless and effective learning experience.",
-            "image": image1
+            "image": vis_image1
         },
         {
             "title": "Secure Authentication & Role-Based Access",
             "description": "Vision Classes offers a secure login and signup system, allowing users to register natively using Express and React or through Auth0 with Google, GitHub, and other social authentication providers. This ensures a flexible and hassle-free login experience.",
-            "image": image1
+            "image": vis_image2
         },
         {
             "title": "Seamless Redux Integration for State Management",
             "description": "The platform is built with seamless Redux integration, ensuring efficient state management across different components. This enables smooth navigation, real-time updates, and enhanced performance, providing users with a seamless experience.",
-            "image": image1
+            "image":vis_image3
         },
         {
             "title": "Effortless Add-to-Cart & Checkout",
             "description": "Users can easily browse through available courses, add them to their cart, and proceed to checkout without any page reloads. The intuitive interface ensures a hassle-free experience while selecting and purchasing courses.",
-            "image": image1
+            "image": vis_image3
         },
         {
             "title": "Admin Dashboard for Course Management",
             "description": "Vision Classes provides an admin dashboard where authorized users can post, delete, and update courses. This ensures efficient course management, keeping the content up-to-date and relevant for students.",
-            "image": image1
+            "image": vis_image4
         },
         {
             "title": "Browse & Purchase Courses with Ease",
             "description": "Students can explore a wide range of courses tailored to their needs, view course details, and purchase them effortlessly. The platform ensures a structured learning experience with easy accessibility to all available courses.",
-            "image": image1
+            "image": vis_image2
         }
     ],
     

@@ -9,6 +9,9 @@ import tech4 from "../assets/img/tech/jenkins.png";
 import tech5 from "../assets/img/tech/react.png";
 import tech6 from "../assets/img/tech/tailwind.png";
 
+
+
+
 import { Pointer, PointerIcon } from "lucide-react";
 import projectData from "./ProjectData";
 import ScrollingComponent from "./Components/ScrollTab";
@@ -110,41 +113,13 @@ export default function ProjectDetails() {
 
 
 
-      {/* Project Title
-      <h1 className="text-4xl font-bold text-gray-900">{project[0].title}</h1>
-      {/* Project Description & Image */}
-      {/* <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center my-12">
-        <motion.div
-          initial={{ opacity: 0, x: -100 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1 }}
-          viewport={{ once: true }}
-        >
-          <p className="text-lg text-gray-700 leading-relaxed">
-            {project[0].description}
-          </p>
-        </motion.div>
-        <motion.div
-          className="flex justify-center"
-          initial={{ opacity: 0, x: 100 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1 }}
-          viewport={{ once: true }}
-        >
-          <img
-            src={project[0].image}
-            alt={project[0].title}
-            className="rounded-lg shadow-lg w-full max-w-lg"
-          />
-        </motion.div>
-      </div>  */}
       
       {/* Features */}
-      <div className="space-y-28 sm:px-5 sm:space-x-10">
+      <div className="space-y-28 sm:px-5  sm:space-x-10">
         {project.map((feature, index) => (
           <div
             key={index}
-            className="grid grid-cols-1 font-sans items-start lg:grid-cols-2 gap-8 border-b-[1px] border-orange-500 pb-10"
+            className=" grid grid-cols-1 font-sans items-start lg:grid-cols-2 gap-8 border-b-[1px] border-[#0092B8] pb-18"
           >
             {index % 2 === 1 ? (
               <>
@@ -168,10 +143,10 @@ export default function ProjectDetails() {
                   transition={{ duration: 1 }}
                   viewport={{ once: true }}
                 >
-                  <h2 className="text-2xl font-bold  mb-7  text-gray-900">
+                  <h2 className="text-3xl font-bold  mb-7  text-[#0092B8]">
                     {feature.title}
                   </h2>
-                  <p className="text-lg text-gray-700 mt-2">
+                  <p className="text-lg text-white font-semibold mt-2">
                     {feature.description}
                   </p>
                 </motion.div>
@@ -186,10 +161,10 @@ export default function ProjectDetails() {
                   viewport={{ once: true }}
                   
                 >
-                  <h2 className="text-2xl mb-7 font-bold text-gray-900">
+                  <h2 className="text-3xl mb-7 font-bold text-[#0092B8]">
                     {feature.title}
                   </h2>
-                  <p className="text-lg text-gray-700 mt-2">
+                  <p className="text-lg text-white font-semibold mt-2">
                     {feature.description}
                   </p>
                 </motion.div>

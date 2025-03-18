@@ -26,11 +26,11 @@ function WhyChooseUs() {
           </p>
         </div>
         {/* Right side image */}
-        <div className="w-[45vw] sm:w-[30vw]   overflow-hidden">
+        <div className=" flex justify-center  w-full    overflow-hidden">
           <motion.img
             src={goals}
             alt="Illustration"
-            className="w-[65vw] "
+            className="w-[60vw] sm:w-[30vw] "
             initial={{ opacity: 0, x: 100 }} // Starts outside the screen
             whileInView={{ opacity: 1, x: 0 }} // Moves into view
             transition={{ duration: 1, ease: "easeOut" }}

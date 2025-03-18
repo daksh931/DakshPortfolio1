@@ -56,7 +56,7 @@ export default function Navbar() {
   return (
     <div className="sticky  top-0 bg-black/95 z-20">
       <div className="shadow-lg hover:shadow-xl">
-        <div className=" w-full mx-0.5  py-1 sm:flex justify-between  ">
+        <div className=" w-full mx-0.5  py-1 md:flex justify-between  ">
 
 
           <div className=" py-3 px-6 flex justify-between  ">
@@ -71,7 +71,7 @@ export default function Navbar() {
               </Link>
             </div>
 
-            <div className="sm:hidden text-white  ">
+            <div className="md:hidden text-white  ">
               <button
                 onClick={() => setIsOpen(!isOpen)}
                 className="focus:outline-none text-white"
@@ -84,8 +84,8 @@ export default function Navbar() {
 
           {/* desktop nav items map  */}
           <div id="nav items" className="   text-white font-mono mt-1 ">
-            <div className="hidden sm:block">
-              <div className="sm:flex  flex-col sm:flex-row sm:space-x-6 space-y-4 sm:space-y-0 hidden whitespace-nowrap  ">
+            <div className="hidden md:block">
+              <div className="md:flex  flex-col sm:flex-row sm:space-x-6 space-y-4 sm:space-y-0 hidden whitespace-nowrap  ">
                 <nav className="flex space-x-1">
                   {navLinks.map((link, index) => (
                     
@@ -149,7 +149,7 @@ export default function Navbar() {
                     ${isOpen ? "translate-y-0" : "-translate-y-full"} sm:hidden`}> */}
           <div
             className={`${isOpen ? "block" : "hidden"
-              } flex sm:hidden items-center relative  `}
+              } flex md:hidden items-center relative  `}
           >
             <div className="absolute top-0 inset-0  bg-black/80 backdrop-blur-sm h-[100vh] font-mono space-y-9 w-full flex flex-col p-6">
               <Link
