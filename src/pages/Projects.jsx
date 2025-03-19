@@ -99,7 +99,7 @@ export default function ProjectDetails() {
   const [paused, setPaused] = useState(false);
 
   return (
-    <div className="px-6 lg:px-24 py-16 bg-[#191917]">
+    <div className="px-6 lg:px-24 py-16 bg-[#191917] -m-1">
       {/* Breadcrumb Navigation */}
       <div className="mb-6 text-gray-500 text-sm">
         <span
@@ -161,7 +161,7 @@ export default function ProjectDetails() {
                   viewport={{ once: true }}
                   
                 >
-                  <h2 className="text-3xl mb-7 font-bold text-[#0092B8]">
+                  <h2 className="text-3xl mb-7 font-bold text-[#0092B8] hover:text-[#1CCBF3] transition-colors delay-75 duration-200 cursor-pointer">
                     {feature.title}
                   </h2>
                   <p className="text-lg text-white font-semibold mt-2">
