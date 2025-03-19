@@ -1,5 +1,4 @@
 import React, { useRef } from 'react';
-import { appendSpreadsheetData } from '../../api/sheet';
 
 function ContactUs() {
   // Refs for form fields
@@ -20,7 +19,7 @@ function ContactUs() {
     // Handle form submission logic here (e.g., send data to server or API)
     console.log({ name, email, phone, comment });
 
-    fetch('https://sheetdb.io/api/v1/mt0l3llwqqgs4', {
+    fetch(`https://sheetdb.io/api/v1/${import.meta.env.VITE_sheetDBSecret}`, {
       method: 'POST',
       headers: {
           Accept: 'application/json',
