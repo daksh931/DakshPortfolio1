@@ -62,11 +62,16 @@ return (
     <motion.div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
       <div>
         {/* <h2 className="text-cyan-400/60 font-semibold">About Us</h2> */}
-        <h1 ref={textRef} className="text-4xl  text-[#8962D5] font-bold  mt-2">
-        {"A reliable solution for your digital solutions".split("").map((letter, index) => (
-              <span key={index} style={{ display: "inline-block" }}>  {letter === " " ? "\u00A0" : letter}  </span>
-            ))}
-        </h1>
+      <h1 ref={textRef} className="text-4xl text-[#8962D5] font-bold mt-2 flex flex-wrap">
+  {"A reliable solution for your digital solutions".split(" ").map((word, index) => (
+    <span key={index} className="mr-2 whitespace-nowrap">
+      {word.split("").map((letter, i) => (
+        <span key={i}>{letter}</span>
+      ))}
+    </span>
+  ))}
+</h1>
+
         <div className="mt-6 space-y-6">
           {features.map((feature, index) => (
             <div  key={index} className="flex items-start space-x-4 group">

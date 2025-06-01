@@ -86,7 +86,7 @@ export default function ProjectDetails() {
     },
     {
       quote: "A truly game-changing experience! The best investment ever.",
-      name: "Sarah Johnson",
+      name: " py-12 border-t border-amber-600",
     },
     {
       quote: "Fast, reliable, and top-notch quality. Absolutely fantastic.",
@@ -190,8 +190,8 @@ export default function ProjectDetails() {
 
       {/* Tech Stack - Auto Running Logos */}
       <div className="my-16 relative overflow-hidden">
-        <h2 className="text-3xl font-bold text-center text-gray-900 mb-6">
-          Tech Stack Used
+        <h2 className="text-3xl font-bold text-center text-[#0092B8] mb-6">
+          Tech Stack 
         </h2>
 
         <div className="relative flex items-center w-full">
@@ -234,15 +234,15 @@ export default function ProjectDetails() {
           <ScrollingComponent/>
 
           {/* Fade Effect at Ends */}
-          <div className="absolute top-0 bottom-0 left-0 w-20 bg-gradient-to-r from-gray-100 to-transparent"></div>
-          <div className="absolute top-0 bottom-0 right-0 w-20 bg-gradient-to-l from-gray-100 to-transparent"></div>
+          <div className="absolute top-0 bottom-0 left-0 w-20 bg-gradient-to-r from-[#191917] to-transparent"></div>
+          <div className="absolute top-0 bottom-0 right-0 w-20 bg-gradient-to-l from-[#191917] to-transparent"></div>
         </div>
       </div>
 
       {/* Happy Clients */}
       <div className="mt-16 text-center">
-        <h2 className="text-3xl font-bold text-gray-900">Happy Clients</h2>
-        <p className="text-lg text-gray-700 mt-2">
+        <h2 className="text-3xl font-bold text-[#5F4495]">Happy Clients</h2>
+        <p className="text-lg text-gray-300 mt-2">
           Our customers love what we do! See their feedback below.
         </p>
 
