@@ -186,7 +186,7 @@ export default function Navbar() {
                 </span>
               </Link>
               <Link
-                to="/Contact Me"
+                to="/work"
                 className="flex justify-between items-center text-white hover: text-2xl w-full"
               >
                 <span className="flex items-center space-x-3">

@@ -1,11 +1,9 @@
 import React, { useEffect } from 'react';
 import cloud from '../assets/img/cloud.png';
-import webdev from '../assets/img/webdev.png';
 import devlopment from '../assets/img/devlopment.png';
 import it from '../assets/img/it.png';
 import seo from '../assets/img/seo.png';
-import graphicDesigner from '../assets/img/graphicDesigner.png';
-import { motion } from "framer-motion";
+
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 import { useRef } from 'react';
 import gsap from 'gsap';
@@ -109,13 +107,13 @@ function OurServices() {
         <h2 className="text-5xl font-bold text-center mb-30 text-[#A374FF]  hover:text-[#7467B7] transition-colors delay-25 duration-750 mt-8"> Services</h2>
         </div>
       
-      <div className=' mt-12 mb-50 '>
+      <div className='mt-30 md:mt-12 mb-50 '>
         {data.map((item, idx) => (
           <div 
             key={idx}
             // ref={scrollRef}
             ref={(el) => animateRefs.current[idx] = el}
-            className={`animate-item  -my-23 flex flex-col items-center ${idx % 2 !== 0 ? 'md:items-end' : 'md:items-start'}  h-full  `} >
+            className={`animate-item my-30 md:-my-23 flex flex-col items-center ${idx % 2 !== 0 ? 'md:items-end' : 'md:items-start'}  h-auto  `} >
             <ServiceCard
               key={idx}
 
@@ -133,12 +131,13 @@ function OurServices() {
 
 const ServiceCard = ({ image, title, description }) => (
 
-  <div className="shadow-md  cursor-pointer bg-[#0E100F] shadow-cyan-500/30  hover:shadow-pink-500/50 group  hover:scale-103 transition duration-500 rounded-3xl w-[75vw] md:h-[60vh] md:w-[30vw] ">
+  <div className="shadow-md  cursor-pointer bg-[#0E100F] shadow-cyan-500/30  hover:shadow-pink-500/50 group  hover:scale-103 transition duration-500 rounded-3xl h-auto w-[75vw] md:h-[60vh] md:w-[30vw] ">
 
     <div className=" flex flex-col md:flex-row md:items-center w-full h-full text-center">
       {/* <div className={`flex flex-col md:flex-row md:items-center md:justify-between text-center ${isReversed ? 'md:flex-row-reverse' : ''}`}> */}
       {/* image */}
-      <div className="flex justify-center md:justify-start  md:items-center h-[40vw]  md:h-[60vh]  md:w-[10vw] bg-cover overflow-hidden">
+      <div className="flex justify-center md:justify-start  md:items-center h-[30vw] sm:h-[20vh] 
+      md:w-[30vw] md:h-[30vw]   bg-cover overflow-hidden">
         <img src={image} alt={title} className=" object-contain bg-cover" />
       </div>
 
@@ -149,7 +148,7 @@ const ServiceCard = ({ image, title, description }) => (
 
 
       {/* title & desc  */}
-      <div className="flex flex-col py-5 px-1 mx-5  md:h-full w-full  md:justify-evenly  text-center">
+      <div className="flex flex-col sm:py-5 px-1 mx-5 justify-center  md:h-full   md:justify-evenly  text-center">
         <h3 className="md:text-2xl font-semibold mb-2 text-white group-hover:text-[#E443AE] transition-colors delay-75 duration-200">{title} </h3>
         <p className="text-white text-md mb-4 ">{description}</p>
       </div>

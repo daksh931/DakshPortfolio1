@@ -8,7 +8,8 @@ function Footer() {
       
         {/* First Section - Company Logo and Description */}
         <div>
-          <img src="/path-to-your-logo.png" alt="Company Logo" className="h-12 mb-4" />
+          {/* <img src="/path-to-your-logo.png" alt="Company Logo" className="h-12 mb-4" /> */}
+          <h1 className='font-medium text-[17px] mb-5'>Web Dev Services</h1>
           <p className="text-sm ">We provide innovative solutions to help businesses grow and thrive in the digital age.</p>
         </div>
 
@@ -23,10 +24,10 @@ function Footer() {
         <div>
           <h3 className="text-lg font-semibold mb-4">Useful Links</h3>
           <ul className="space-y-2">
-            <li><a href="#about" className="text-sm  hover:text-orange-500 transition-colors">About Us</a></li>
-            <li><a href="#our-work" className="text-sm  hover:text-orange-500 transition-colors">Our Work</a></li>
-            <li><a href="#our-services" className="text-sm  hover:text-orange-500 transition-colors">Our Services</a></li>
-            <li><a href="#contact-us" className="text-sm  hover:text-orange-500 transition-colors">Contact Us</a></li>
+            <li><a href="/about" className="text-sm  hover:text-orange-500 transition-colors">About Us</a></li>
+            <li><a href="/work" className="text-sm  hover:text-orange-500 transition-colors">Our Work</a></li>
+            <li><a href="/services" className="text-sm  hover:text-orange-500 transition-colors">Our Services</a></li>
+            <li><a href="/contact" className="text-sm  hover:text-orange-500 transition-colors">Contact Us</a></li>
           </ul>
         </div>
 
