@@ -1,18 +1,8 @@
-import React, { useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import { motion, useAnimation } from "framer-motion";
+import { motion } from "framer-motion";
 import design from "../assets/img/design.png";
-import tech1 from "../assets/img/tech/react.png";
-import tech2 from "../assets/img/tech/vite.png";
-import tech3 from "../assets/img/tech/java.png";
-import tech4 from "../assets/img/tech/jenkins.png";
-import tech5 from "../assets/img/tech/react.png";
-import tech6 from "../assets/img/tech/tailwind.png";
 
 
-
-
-import { Pointer, PointerIcon } from "lucide-react";
 import projectData from "./ProjectData";
 import ScrollingComponent from "./Components/ScrollTab";
 
@@ -69,35 +59,34 @@ export default function ProjectDetails() {
       image: design,
     },
   ];
-  const testimonials = [
-    {
-      quote:
-        "This product completely transformed our business! Highly recommend.",
-      name: "John Doe",
-    },
-    {
-      quote:
-        "The team was very professional and delivered beyond expectations.",
-      name: "Jane Smith",
-    },
-    {
-      quote: "Excellent service and outstanding results. Would use again!",
-      name: "Alex Brown",
-    },
-    {
-      quote: "A truly game-changing experience! The best investment ever.",
-      name: " py-12 border-t border-amber-600",
-    },
-    {
-      quote: "Fast, reliable, and top-notch quality. Absolutely fantastic.",
-      name: "Michael Lee",
-    },
-  ];
-  const techLogos = [tech1, tech2, tech3, tech4, tech5, tech6];
+ const testimonials = [
+  {
+    quote:
+      "This product completely transformed our business! Highly recommend.",
+    name: "Rahul Mehra",
+  },
+  {
+    quote:
+      "The team was very professional and delivered beyond expectations.",
+    name: "Aisha Khan",
+  },
+  {
+    quote: "Excellent service and outstanding results. Would use again!",
+    name: "Omar Al-Farouq",
+  },
+  {
+    quote: "A truly game-changing experience! The best investment ever.",
+    name: "Priya Desai",
+  },
+  {
+    quote: "Fast, reliable, and top-notch quality. Absolutely fantastic.",
+    name: "Zayd Al-Mansoori",
+  },
+];
 
-  const controls = useAnimation();
-  const [paused, setPaused] = useState(false);
 
+
+  
   return (
     <div className="px-6 lg:px-24 py-16 bg-[#191917] -m-1">
       {/* Breadcrumb Navigation */}

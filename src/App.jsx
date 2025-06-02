@@ -11,6 +11,7 @@ import { motion, useScroll } from "framer-motion";
 import Footer from "./pages/Footer";
 import Lenis from "@studio-freight/lenis"; // Import Lenis
 import { useEffect, useRef } from "react";
+import ScrollToTop from "./pages/Components/ScrollOnTop";
 
 
 function App() {
@@ -43,7 +44,7 @@ function App() {
   return (
     <div className=" ">
    
-
+       <ScrollToTop />
       <Navbar />
       <motion.div
         className="bg-[#A374FF] h-[2px] sticky top-17 z-10 origin-left rounded-xl"

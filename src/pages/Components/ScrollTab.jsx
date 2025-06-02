@@ -4,8 +4,10 @@ import tech1 from "../../assets/img/tech/react.png";
 import tech2 from "../../assets/img/tech/vite.png";
 import tech3 from "../../assets/img/tech/java.png";
 import tech4 from "../../assets/img/tech/jenkins.png";
-import tech5 from "../../assets/img/tech/react.png";
-import tech6 from "../../assets/img/tech/tailwind.png";
+import tech5 from "../../assets/img/tech/GitHubActions.png";
+import tech6 from "../../assets/img/tech/docker.png";
+import tech7 from "../../assets/img/tech/tailwind.png";
+import tech8 from "../../assets/img/tech/GitHub.png";
 
 // const ScrollingComponent = () => {
 //   const controls = useAnimation();
@@ -66,7 +68,7 @@ import tech6 from "../../assets/img/tech/tailwind.png";
 //   );
 // };
 
-const techLogos = [tech1, tech2, tech3, tech4, tech5, tech6];
+const techLogos = [tech1, tech2, tech3, tech4, tech5, tech6, tech7, tech8];
 
 
 const ScrollingComponent = () => {
