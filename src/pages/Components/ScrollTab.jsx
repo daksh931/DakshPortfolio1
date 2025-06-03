@@ -7,7 +7,7 @@ import tech4 from "../../assets/img/tech/jenkins.png";
 import tech5 from "../../assets/img/tech/GitHubActions.png";
 import tech6 from "../../assets/img/tech/docker.png";
 import tech7 from "../../assets/img/tech/tailwind.png";
-import tech8 from "../../assets/img/tech/GitHub.png";
+import tech8 from "../../assets/img/tech/GitHubLogo.png";
 
 // const ScrollingComponent = () => {
 //   const controls = useAnimation();
