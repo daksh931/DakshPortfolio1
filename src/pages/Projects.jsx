@@ -59,6 +59,7 @@ export default function ProjectDetails() {
       image: design,
     },
   ];
+
  const testimonials = [
   {
     quote:
@@ -183,43 +184,8 @@ export default function ProjectDetails() {
           Tech Stack 
         </h2>
 
-        <div className="relative flex items-center w-full">
-          {/* <motion.div
-            className="flex space-x-12 min-w-max"
-            animate={controls}
-            initial={{ x: "0%" }}
-            transition={{
-              repeat: Infinity,
-              duration: 10,
-              ease: "linear",
-            }}
-            onMouseEnter={() => {
-              setPaused(true);
-              controls.stop();
-            }}
-            onMouseLeave={() => {
-              setPaused(false);
-              controls.start({ x: ["0%", "-50%"] });
-            }}
-          >
-            {[...Array(2)].map((_, index) => (
-              <React.Fragment key={index}>
-                {techLogos.map((logo, i) => (
-                  <motion.img
-                    key={i}
-                    src={logo}
-                    alt="Tech Logo"
-                    className="opacity-70 w-24"
-                    whileHover={{
-                      scale: 1.1,
-                      cursor: Pointer,
-                      opacity: 1,
-                    }}
-                  />
-                ))}
-              </React.Fragment>
-            ))}
-          </motion.div> */}
+        <div className="relative flex  items-center w-full">
+          
           <ScrollingComponent/>
 
           {/* Fade Effect at Ends */}
